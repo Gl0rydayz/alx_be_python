@@ -6,7 +6,7 @@ class Book:
     demonstrating inheritance principles in Python.
     """
     
-    def __init__(self, title: str, author: str):
+    def __init__(self, title, author):
         """
         Initialize a Book instance with title and author.
         
@@ -17,7 +17,7 @@ class Book:
         self.title = title
         self.author = author
     
-    def get_info(self) -> str:
+    def get_info(self):
         """
         Get a string representation of the book's basic information.
         
@@ -26,7 +26,7 @@ class Book:
         """
         return f"{self.title} by {self.author}"
     
-    def __str__(self) -> str:
+    def __str__(self):
         """
         String representation method for user-friendly output.
         
@@ -57,7 +57,7 @@ class EBook(Book):
         super().__init__(title, author)
         self.file_size = file_size
     
-    def get_info(self) -> str:
+    def get_info(self):
         """
         Override the parent method to include file size information.
         
@@ -66,7 +66,7 @@ class EBook(Book):
         """
         return f"EBook: {super().get_info()}, File Size: {self.file_size}KB"
     
-    def __str__(self) -> str:
+    def __str__(self):
         """
         String representation method for EBook.
         
@@ -97,7 +97,7 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
     
-    def get_info(self) -> str:
+    def get_info(self):
         """
         Override the parent method to include page count information.
         
@@ -106,7 +106,7 @@ class PrintBook(Book):
         """
         return f"PrintBook: {super().get_info()}, Page Count: {self.page_count}"
     
-    def __str__(self) -> str:
+    def __str__(self):
         """
         String representation method for PrintBook.
         
@@ -130,7 +130,7 @@ class Library:
         """
         self.books = []
     
-    def add_book(self, book: Book):
+    def add_book(self, book):
         """
         Add a book to the library.
         
@@ -155,9 +155,9 @@ class Library:
         
         print("Books in the library:")
         for book in self.books:
-            print(f"Book: {book.get_info()}")
+            print(book.get_info())
     
-    def get_book_count(self) -> int:
+    def get_book_count(self):
         """
         Get the total number of books in the library.
         

@@ -6,7 +6,7 @@ class Book:
     implementing constructor, destructor, and representation methods.
     """
     
-    def __init__(self, title: str, author: str, year: int):
+    def __init__(self, title, author, year):
         """
         Constructor method to initialize a Book instance.
         
@@ -25,7 +25,7 @@ class Book:
         """
         print(f"Deleting {self.title}")
     
-    def __str__(self) -> str:
+    def __str__(self):
         """
         String representation method for user-friendly output.
         
@@ -34,7 +34,7 @@ class Book:
         """
         return f"{self.title} by {self.author}, published in {self.year}"
     
-    def __repr__(self) -> str:
+    def __repr__(self):
         """
         Official representation method that shows how to recreate the object.
         

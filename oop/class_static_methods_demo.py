@@ -20,7 +20,7 @@ class Calculator:
         self.history = []
     
     @staticmethod
-    def add(a: float, b: float) -> float:
+    def add(a, b):
         """
         Static method to add two numbers.
         
@@ -37,7 +37,7 @@ class Calculator:
         return a + b
     
     @staticmethod
-    def subtract(a: float, b: float) -> float:
+    def subtract(a, b):
         """
         Static method to subtract two numbers.
         
@@ -51,7 +51,7 @@ class Calculator:
         return a - b
     
     @classmethod
-    def multiply(cls, a: float, b: float) -> float:
+    def multiply(cls, a, b):
         """
         Class method to multiply two numbers.
         
@@ -69,7 +69,7 @@ class Calculator:
         return a * b
     
     @classmethod
-    def divide(cls, a: float, b: float) -> float:
+    def divide(cls, a, b):
         """
         Class method to divide two numbers.
         
