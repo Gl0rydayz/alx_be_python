@@ -24,7 +24,7 @@ class Book:
         Returns:
             str: Formatted string with book title and author
         """
-        return f"{self.title} by {self.author}"
+        return f"Book: {self.title} by {self.author}"
     
     def __str__(self):
         """
