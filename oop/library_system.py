@@ -25,6 +25,15 @@ class Book:
             str: Formatted string with book title and author
         """
         return f"{self.title} by {self.author}"
+    
+    def __str__(self) -> str:
+        """
+        String representation method for user-friendly output.
+        
+        Returns:
+            str: Formatted string with book title and author
+        """
+        return f"{self.title} by {self.author}"
 
 
 class EBook(Book):
@@ -56,6 +65,15 @@ class EBook(Book):
             str: Formatted string with book info and file size
         """
         return f"EBook: {super().get_info()}, File Size: {self.file_size}KB"
+    
+    def __str__(self) -> str:
+        """
+        String representation method for EBook.
+        
+        Returns:
+            str: Formatted string with EBook information
+        """
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 class PrintBook(Book):
@@ -87,6 +105,15 @@ class PrintBook(Book):
             str: Formatted string with book info and page count
         """
         return f"PrintBook: {super().get_info()}, Page Count: {self.page_count}"
+    
+    def __str__(self) -> str:
+        """
+        String representation method for PrintBook.
+        
+        Returns:
+            str: Formatted string with PrintBook information
+        """
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
