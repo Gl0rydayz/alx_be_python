@@ -9,7 +9,7 @@ class Calculator:
     # Class attribute that can be accessed by class methods
     calculation_type = "Arithmetic Operations"
     
-    def __init__(self, name: str = "Default Calculator"):
+    def __init__(self, name="Default Calculator"):
         """
         Initialize a Calculator instance.
         

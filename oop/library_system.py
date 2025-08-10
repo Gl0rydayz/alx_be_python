@@ -44,7 +44,7 @@ class EBook(Book):
     Demonstrates inheritance and method overriding.
     """
     
-    def __init__(self, title: str, author: str, file_size: int):
+    def __init__(self, title, author, file_size):
         """
         Initialize an EBook instance.
         
@@ -84,7 +84,7 @@ class PrintBook(Book):
     Demonstrates inheritance and method overriding.
     """
     
-    def __init__(self, title: str, author: str, page_count: int):
+    def __init__(self, title, author, page_count):
         """
         Initialize a PrintBook instance.
         
