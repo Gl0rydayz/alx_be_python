@@ -90,7 +90,7 @@ class Calculator:
         return a / b
     
     @classmethod
-    def get_calculation_type(cls) -> str:
+    def get_calculation_type(cls):
         """
         Class method to get the calculation type.
         
@@ -102,7 +102,7 @@ class Calculator:
         return cls.calculation_type
     
     @classmethod
-    def set_calculation_type(cls, new_type: str) -> None:
+    def set_calculation_type(cls, new_type):
         """
         Class method to change the calculation type.
         
@@ -114,7 +114,7 @@ class Calculator:
         cls.calculation_type = new_type
         print(f"Calculation type changed to: {new_type}")
     
-    def instance_method_example(self) -> str:
+    def instance_method_example(self):
         """
         Instance method example for comparison.
         
@@ -125,7 +125,7 @@ class Calculator:
         """
         return f"Calculator '{self.name}' - Type: {self.calculation_type}"
     
-    def add_to_history(self, operation: str, result: float) -> None:
+    def add_to_history(self, operation, result):
         """
         Instance method to add calculations to history.
         
@@ -135,7 +135,7 @@ class Calculator:
         """
         self.history.append(f"{operation}: {result}")
     
-    def get_history(self) -> list:
+    def get_history(self):
         """
         Instance method to get calculation history.
         
